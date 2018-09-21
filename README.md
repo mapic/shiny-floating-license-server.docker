@@ -1,4 +1,4 @@
-## Shiny Floating License Server
+# Shiny Floating License Server
 
 ## Usage
 
@@ -8,3 +8,7 @@
 3. Run the container: `bash run.sh`
 
 This should activate your floating license server with your key. The running server is available on port 8979 by default.
+
+### Deactivate
+In order to deactivate a Floating License Server, you must deactivate it from the same server it's currently activated on - ie. the _same_ Docker container.
+Edit the run-server.sh script and uncomment the "deactivate-license.sh" script, and run run-server.sh again.
