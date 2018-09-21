@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # start floating license server
-sudo /usr/lib/ssp-license-server/bin/license-server -x -pdets=/usr/lib/ssp-license-server/bin/license-server.dat -config=/etc/ssp-license-server.conf -pidfile=/var/run/ssp-license-server.pid
+sudo /usr/lib/ssp-license-server/bin/license-server -d -pdets=/usr/lib/ssp-license-server/bin/license-server.dat -config=/etc/ssp-license-server.conf -pidfile=/var/run/ssp-license-server.pid
 
 # check exit status
 EXITCODE=$?
