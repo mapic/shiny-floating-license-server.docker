@@ -10,7 +10,7 @@ fi
 
 # ensure docker container is running
 DOCKER_CONTAINER_NAME="shiny-floating-license-server"
-docker run --name $DOCKER_CONTAINER_NAME -t -d mapic/shiny-floating-license-server:latest bash 2> /dev/null
+docker run --name $DOCKER_CONTAINER_NAME -p 8979:8979 -t -d mapic/shiny-floating-license-server:latest bash 2> /dev/null
 EXITCODE=$?
 if [ $EXITCODE -gt 0 ]; then
     docker start $DOCKER_CONTAINER_NAME
@@ -23,9 +23,3 @@ docker exec -it -e SHINY_FLOATING_LICENSE_SERVER_KEY=$SHINY_FLOATING_LICENSE_SER
 # start license server
 echo "Starting license server..."
 docker exec -d $DOCKER_CONTAINER_NAME bash /home/start-license-server.sh
-
-# check license
-# docker exec -it $DOCKER_CONTAINER_NAME bash /home/check-license.sh
-
-# deactivate license
-# docker exec -it "$DOCKER_CONTAINER_NAME" bash /home/deactivate-license.sh

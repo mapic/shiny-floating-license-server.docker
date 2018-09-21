@@ -19,9 +19,10 @@ ADD ./ssp-license-server.conf /etc/
 
 # add scripts
 ADD ./sh/activate-license.sh /home/
-ADD ./sh/check-license.sh /home/
 ADD ./sh/deactivate-license.sh /home/
+ADD ./sh/check-license.sh /home/
 ADD ./sh/start-license-server.sh /home/
+ADD ./sh/stop-license-server.sh /home/
 
 # set workdir
 WORKDIR /home/
