@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t mapic/shiny-server-license-server .
+docker build -t mapic/shiny-floating-license-server .

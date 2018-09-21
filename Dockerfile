@@ -17,6 +17,14 @@ RUN yes N | sudo dpkg -i ssp-license-server-1.0.9-x86_64.deb
 # add config
 ADD ./ssp-license-server.conf /etc/
 
-# add, set entrypoint
-ADD ./docker-entrypoint.sh /root/
-ENTRYPOINT ["bash", "/root/docker-entrypoint.sh"]
+# add scripts
+ADD ./sh/activate-license.sh /home/
+ADD ./sh/check-license.sh /home/
+ADD ./sh/deactivate-license.sh /home/
+ADD ./sh/start-license-server.sh /home/
+
+# set workdir
+WORKDIR /home/
+
+# port
+EXPOSE 8979
