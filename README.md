@@ -2,9 +2,15 @@
 
 ## Install
 
-1. Add your floating license key to `.key` file in the root folder, like so: `echo "MY-FLOATING-KEY" > ".key"`
+1. Add your floating license key to `.key` file in the root folder, like so: 
+```bash 
+echo "MY-FLOATING-KEY" > ".key"
+```
 2. Adjust [configuration](https://wyday.com/limelm/help/turbofloat-server/#config) in `ssp-license-server.conf` as needed. 
-2. Build the Docker image: `bash build.sh`
+2. Build the Docker image: 
+```bash
+bash build.sh
+```
 
 
 ## Start license server
