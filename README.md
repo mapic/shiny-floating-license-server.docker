@@ -1,6 +1,12 @@
 # Shiny Floating License Server
 
 ## Install
+```bash
+git clone https://github.com/mapic/docker.shiny-floating-license-server.git
+cd docker.shiny-floating-license-server
+```
+
+## Configure
 
 1. Add your floating license key to `.key` file in the root folder, like so: 
 ```bash 
