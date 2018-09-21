@@ -6,8 +6,8 @@ if [ -z "$SHINY_FLOATING_LICENSE_SERVER_KEY" ]; then
 fi
 
 # authenticate license server
-sudo ssp-license-server deactivate
-sudo ssp-license-server activate $SHINY_FLOATING_LICENSE_SERVER_KEY
+# sudo ssp-license-server deactivate
+# sudo ssp-license-server activate $SHINY_FLOATING_LICENSE_SERVER_KEY
 
 
 # start license server
