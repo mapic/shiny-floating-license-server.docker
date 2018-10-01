@@ -12,7 +12,7 @@ cd docker.shiny-floating-license-server
 ```bash 
 echo "MY-FLOATING-KEY" > ".key"
 ```
-2. Adjust [configuration](https://wyday.com/limelm/help/turbofloat-server/#config) in `ssp-license-server.conf` as needed. Note that if you change the `port`, the port must be `EXPOSE`d in the [Dockerfile](https://github.com/mapic/docker.shiny-floating-license-server/blob/master/Dockerfile#L31)
+2. Adjust [configuration](https://wyday.com/limelm/help/turbofloat-server/#config) in `ssp-license-server.conf` as needed. (Note that if you change the `port`, the port must be `EXPOSE`d in the [Dockerfile](https://github.com/mapic/docker.shiny-floating-license-server/blob/master/Dockerfile#L31))
 2. Build the Docker image: 
 ```bash
 bash build.sh
