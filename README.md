@@ -1,5 +1,7 @@
 # Shiny Floating License Server
 
+Please see https://github.com/mapic/shiny.docker-compose for usage instructions.
+
 ## Install
 ```bash
 git clone https://github.com/mapic/docker.shiny-floating-license-server.git
