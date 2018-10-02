@@ -1,11 +1,11 @@
 FROM ubuntu:16.04
 
 LABEL maintainer="knutole@mapic.io"
-LABEL repository="https://github.com/mapic/docker.shiny-floating-license-server"
+LABEL repository="https://github.com/mapic/shiny-floating-license-server.docker"
 
 # install deps
 RUN apt-get update -y
-RUN apt-get install -y sudo software-properties-common apt-transport-https fish git wget curl htop nano 
+RUN apt-get install -y sudo software-properties-common apt-transport-https fish git wget curl htop nano net-tools iputils-ping
 RUN apt-get upgrade -y
 
 # download rstudio shiny floating license server
