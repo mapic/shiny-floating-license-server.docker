@@ -42,4 +42,4 @@ bash stop-server.sh
 
 The start-server.sh script will automatically create a Docker Bridge network called `shiny-network`. You can use this network in your Docker Compose or other configuration to access the floating license container. 
 
-If connected to `shiny-network`, you can access the container on `shiny-floating-license-server:8979`.
+You can therefore access the container at `shiny-floating-license-server:8979` from any other container connected to the `shiny-network` Docker network.
