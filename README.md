@@ -1,10 +1,10 @@
 # Shiny Floating License Server
 
-Please see https://github.com/mapic/shiny.docker-compose for usage instructions.
+Please see https://github.com/mapic/shiny for usage instructions.
 
 ## Install
 ```bash
-git clone https://github.com/mapic/docker.shiny-floating-license-server.git
+git clone https://github.com/mapic/shiny-floating-license-server.docker.git
 cd docker.shiny-floating-license-server
 ```
 
@@ -14,7 +14,7 @@ cd docker.shiny-floating-license-server
 ```bash 
 echo "MY-FLOATING-KEY" > ".key"
 ```
-2. Adjust [configuration](https://wyday.com/limelm/help/turbofloat-server/#config) in `ssp-license-server.conf` as needed. (Note that if you change the `port`, the port must be `EXPOSE`d in the [Dockerfile](https://github.com/mapic/docker.shiny-floating-license-server/blob/master/Dockerfile#L31))
+2. Adjust [configuration](https://wyday.com/limelm/help/turbofloat-server/#config) in `ssp-license-server.conf` as needed. (Note that if you change the `port`, the port must be `EXPOSE`d in the [Dockerfile](https://github.com/mapic/hiny-floating-license-server.docker/blob/master/Dockerfile#L31))
 2. Build the Docker image: 
 ```bash
 bash build.sh
