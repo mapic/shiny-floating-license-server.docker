@@ -13,7 +13,7 @@ if [ "$SHINY_FLOATING_LICENSE_SERVER_KEY" == "" ]; then
 fi
 
 # ensure docker container is running
-docker run --name $DOCKER_CONTAINER_NAME -t -d mapic/shiny-floating-license-server:latest bash 2> /dev/null
+docker run --restart unless-stopped --name $DOCKER_CONTAINER_NAME -t -d mapic/shiny-floating-license-server:latest bash 2> /dev/null
 EXITCODE=$?
 if [ $EXITCODE -gt 0 ]; then
     docker start $DOCKER_CONTAINER_NAME
