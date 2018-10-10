@@ -5,5 +5,5 @@ services:
 install:
   - docker build -t mapic/shiny-floating-license-server .
 script:
-  - docker run -d mapic/shiny-floating-license-server bash
+  - docker run -d --name floating mapic/shiny-floating-license-server bash
 
