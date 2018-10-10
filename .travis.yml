@@ -1,0 +1,9 @@
+
+language: generic
+services:
+  - docker
+install:
+  - docker build -t mapic/shiny-floating-license-server .
+script:
+  - docker run -d mapic/shiny-floating-license-server bash
+
